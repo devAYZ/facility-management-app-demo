@@ -29,6 +29,15 @@ class OnboardingPageViews: UIView {
         return infoLabel
     }()
     
+    let onboardImage: UIImageView = {
+        let onboardImage = UIImageView()
+        onboardImage.clipsToBounds = true
+        onboardImage.image = #imageLiteral(resourceName: "onboard-img")
+        onboardImage.contentMode = .scaleAspectFit
+        onboardImage.translatesAutoresizingMaskIntoConstraints = false
+        return onboardImage
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
