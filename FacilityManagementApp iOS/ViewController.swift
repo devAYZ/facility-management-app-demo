@@ -28,13 +28,20 @@ class ViewController: UIViewController {
     }
     
     func setupBoardingPageViews() {
-        view.addSubview(onboardingPageViews.getStartedBtn)
+        [onboardingPageViews.getStartedBtn, onboardingPageViews.infoLabel].forEach {
+            view.addSubview($0)
+        }
         
         NSLayoutConstraint.activate([
             onboardingPageViews.getStartedBtn.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.06),
             onboardingPageViews.getStartedBtn.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9),
             onboardingPageViews.getStartedBtn.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -20),
-            onboardingPageViews.getStartedBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            onboardingPageViews.getStartedBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            onboardingPageViews.infoLabel.heightAnchor.constraint(equalToConstant: 45),
+            onboardingPageViews.infoLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8),
+            onboardingPageViews.infoLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            onboardingPageViews.infoLabel.bottomAnchor.constraint(equalTo: onboardingPageViews.getStartedBtn.topAnchor, constant: -70)
             
         ])
     }

@@ -20,6 +20,15 @@ class OnboardingPageViews: UIView {
         return getStartedBtn
     }()
     
+    let infoLabel: UILabel = {
+        let infoLabel = UILabel()
+        infoLabel.translatesAutoresizingMaskIntoConstraints = false
+        infoLabel.text = OnboardingConstant.infoLabel
+        infoLabel.numberOfLines = 0
+        infoLabel.textAlignment = .center
+        return infoLabel
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
