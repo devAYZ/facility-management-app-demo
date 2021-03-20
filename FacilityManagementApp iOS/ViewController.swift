@@ -9,13 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let onboardingPageViews: OnboardingPageViews = OnboardingPageViews()
+    var onboardingPageViews: OnboardingPageViews
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         
         setupBoardingPageViews()
+    }
+    
+    init(onboardingPageViews: OnboardingPageViews = OnboardingPageViews()) {
+        self.onboardingPageViews = onboardingPageViews
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     func setupBoardingPageViews() {
