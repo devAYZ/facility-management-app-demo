@@ -28,8 +28,9 @@ class ViewController: UIViewController {
     }
     
     func setupBoardingPageViews() {
+        
         [onboardingPageViews.getStartedBtn, onboardingPageViews.infoLabel,
-         onboardingPageViews.onboardImage].forEach {
+         onboardingPageViews.onboardImage, onboardingPageViews.welcomeLabel].forEach {
             view.addSubview($0)
         }
         
@@ -42,12 +43,17 @@ class ViewController: UIViewController {
             onboardingPageViews.infoLabel.heightAnchor.constraint(equalToConstant: 45),
             onboardingPageViews.infoLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8),
             onboardingPageViews.infoLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            onboardingPageViews.infoLabel.bottomAnchor.constraint(equalTo: onboardingPageViews.getStartedBtn.topAnchor, constant: -90),
+            onboardingPageViews.infoLabel.bottomAnchor.constraint(equalTo: onboardingPageViews.getStartedBtn.topAnchor, constant: -70),
             
             onboardingPageViews.onboardImage.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.3),
             onboardingPageViews.onboardImage.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8),
             onboardingPageViews.onboardImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            onboardingPageViews.onboardImage.bottomAnchor.constraint(equalTo: onboardingPageViews.infoLabel.topAnchor, constant: -20)
+            onboardingPageViews.onboardImage.bottomAnchor.constraint(equalTo: onboardingPageViews.infoLabel.topAnchor, constant: -20),
+            
+            onboardingPageViews.welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            onboardingPageViews.welcomeLabel.bottomAnchor.constraint(equalTo: onboardingPageViews.onboardImage.topAnchor, constant: -20),
+            onboardingPageViews.welcomeLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9),
+            onboardingPageViews.welcomeLabel.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.3)
             
         ])
     }

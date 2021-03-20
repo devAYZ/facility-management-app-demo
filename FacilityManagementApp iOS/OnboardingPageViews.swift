@@ -38,6 +38,17 @@ class OnboardingPageViews: UIView {
         return onboardImage
     }()
     
+    let welcomeLabel: UILabel = {
+        let welcomeLabel = UILabel()
+        welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
+        welcomeLabel.text = OnboardingConstant.welcomeLabel
+        welcomeLabel.numberOfLines = 0
+        welcomeLabel.font = UIFont.boldSystemFont(ofSize: 50)
+        welcomeLabel.textAlignment = .center
+        welcomeLabel.adjustsFontSizeToFitWidth = true
+        return welcomeLabel
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
