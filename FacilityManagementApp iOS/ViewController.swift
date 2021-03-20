@@ -8,10 +8,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let onboardingPageViews: OnboardingPageViews = OnboardingPageViews()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemTeal
+        view.backgroundColor = .white
+        
+        setupBoardingPageViews()
     }
-
+    
+    func setupBoardingPageViews() {
+        view.addSubview(onboardingPageViews.getStartedBtn)
+        
+        NSLayoutConstraint.activate([
+            onboardingPageViews.getStartedBtn.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.06),
+            onboardingPageViews.getStartedBtn.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9),
+            onboardingPageViews.getStartedBtn.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -20),
+            onboardingPageViews.getStartedBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            
+        ])
+    }
+    
 }

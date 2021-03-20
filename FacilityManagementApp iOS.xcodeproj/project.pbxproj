@@ -14,6 +14,8 @@
 		044BE0BE2603B148001E0663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044BE0BC2603B148001E0663 /* LaunchScreen.storyboard */; };
 		044BE0C92603B148001E0663 /* FacilityManagementApp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0C82603B148001E0663 /* FacilityManagementApp_iOSTests.swift */; };
 		044BE0D42603B148001E0663 /* FacilityManagementApp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0D32603B148001E0663 /* FacilityManagementApp_iOSUITests.swift */; };
+		046785732606A26200320D8E /* OnboardingPageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046785722606A26200320D8E /* OnboardingPageViews.swift */; };
+		046785792606A3D400320D8E /* OnboardingPageConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046785782606A3D400320D8E /* OnboardingPageConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		044BE0CF2603B148001E0663 /* FacilityManagementApp iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FacilityManagementApp iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		044BE0D32603B148001E0663 /* FacilityManagementApp_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityManagementApp_iOSUITests.swift; sourceTree = "<group>"; };
 		044BE0D52603B148001E0663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046785722606A26200320D8E /* OnboardingPageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViews.swift; sourceTree = "<group>"; };
+		046785782606A3D400320D8E /* OnboardingPageConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		044BE0B02603B145001E0663 /* FacilityManagementApp iOS */ = {
 			isa = PBXGroup;
 			children = (
+				046785772606A3AB00320D8E /* Constants */,
 				0467855A2605220B00320D8E /* Model */,
 				0467855C2605228C00320D8E /* View */,
 				0467855B2605221400320D8E /* ViewModel */,
@@ -143,6 +148,7 @@
 		0467855C2605228C00320D8E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				046785722606A26200320D8E /* OnboardingPageViews.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -179,6 +185,14 @@
 				044BE0BF2603B148001E0663 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		046785772606A3AB00320D8E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				046785782606A3D400320D8E /* OnboardingPageConstant.swift */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,7 +347,9 @@
 			files = (
 				044BE0B62603B145001E0663 /* ViewController.swift in Sources */,
 				044BE0B22603B145001E0663 /* AppDelegate.swift in Sources */,
+				046785732606A26200320D8E /* OnboardingPageViews.swift in Sources */,
 				044BE0B42603B145001E0663 /* SceneDelegate.swift in Sources */,
+				046785792606A3D400320D8E /* OnboardingPageConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
