@@ -20,6 +20,24 @@ class OnboardingPageViews: UIView {
         return getStartedBtn
     }()
     
+    let infoLabel: UILabel = {
+        let infoLabel = UILabel()
+        infoLabel.translatesAutoresizingMaskIntoConstraints = false
+        infoLabel.text = OnboardingConstant.infoLabel
+        infoLabel.numberOfLines = 0
+        infoLabel.textAlignment = .center
+        return infoLabel
+    }()
+    
+    let onboardImage: UIImageView = {
+        let onboardImage = UIImageView()
+        onboardImage.clipsToBounds = true
+        onboardImage.image = #imageLiteral(resourceName: "onboard-img")
+        onboardImage.contentMode = .scaleAspectFit
+        onboardImage.translatesAutoresizingMaskIntoConstraints = false
+        return onboardImage
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
