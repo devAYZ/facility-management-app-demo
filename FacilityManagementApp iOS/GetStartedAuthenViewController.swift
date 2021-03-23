@@ -14,15 +14,7 @@ class GetStartedAuthenViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        view.addSubview(webView.getStartedWebView)
-        webView.getStartedWebView.navigationDelegate = self
-        guard let url = AuthManager.shared.signIn else { return }
-        webView.getStartedWebView.load(URLRequest(url: url))
+        view.backgroundColor = .green
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        webView.getStartedWebView.frame = view.frame
-    }
 }
