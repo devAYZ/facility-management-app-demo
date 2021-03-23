@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests/Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/MSGraphClientModels/MSGraphClientModels.framework
+${BUILT_PRODUCTS_DIR}/MSGraphClientSDK/MSGraphClientSDK.framework
