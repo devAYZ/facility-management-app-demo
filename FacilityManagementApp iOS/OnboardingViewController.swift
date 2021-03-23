@@ -7,13 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class OnboardingViewController: UIViewController {
     
     var onboardingPageViews: OnboardingPageViews
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        AuthManager.shared.getTokenSilently { (token: String?, error: Error?) in
+            DispatchQueue.main.async {
+                guard let _ = token, error == nil else {
+                    return
+                }
+                self.present(GetStartedAuthenViewController(), animated: true, completion: nil)
+            }
+        }
         
         setupBoardingPageViews()
     }
@@ -33,6 +41,7 @@ class ViewController: UIViewController {
          onboardingPageViews.onboardImage, onboardingPageViews.welcomeLabel].forEach {
             view.addSubview($0)
         }
+        onboardingPageViews.getStartedBtn.addTarget(self, action: #selector(didTapGetStarted), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             onboardingPageViews.getStartedBtn.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.06),
@@ -56,6 +65,21 @@ class ViewController: UIViewController {
             onboardingPageViews.welcomeLabel.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.3)
             
         ])
+    }
+    
+    @objc func didTapGetStarted() {
+        AuthManager.shared.getTokenInteractively(parentView: self) { (token: String?, error: Error?) in
+            DispatchQueue.main.async {
+                guard let token = token, error == nil else {
+                    let alert = UIAlertController(title: "Oops! Error Signing In", message: "Something went wrong and there was an error signing you in.\nPlease try again!", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "Dismiss", style: .default, handler: nil)
+                    alert.addAction(action)
+                    self.present(alert, animated: true, completion: nil)
+                    return }
+                print("The sign i token: \(token)")
+                self.present(GetStartedAuthenViewController(), animated: true, completion: nil)
+            }
+        }
     }
     
 }
