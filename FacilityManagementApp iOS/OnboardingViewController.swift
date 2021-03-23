@@ -16,7 +16,7 @@ class OnboardingViewController: UIViewController {
         view.backgroundColor = .white
         AuthManager.shared.getTokenSilently { (token: String?, error: Error?) in
             DispatchQueue.main.async {
-                guard let _ = token, error == nil else {
+                guard token != nil, error == nil else {
                     return
                 }
                 self.present(GetStartedAuthenViewController(), animated: true, completion: nil)
@@ -76,7 +76,7 @@ class OnboardingViewController: UIViewController {
                     alert.addAction(action)
                     self.present(alert, animated: true, completion: nil)
                     return }
-                print("The sign i token: \(token)")
+                print("The sign in token: \(token)")
                 self.present(GetStartedAuthenViewController(), animated: true, completion: nil)
             }
         }
