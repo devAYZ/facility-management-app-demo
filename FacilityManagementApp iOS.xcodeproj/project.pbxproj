@@ -3,19 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		044BE0B22603B145001E0663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0B12603B145001E0663 /* AppDelegate.swift */; };
 		044BE0B42603B145001E0663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0B32603B145001E0663 /* SceneDelegate.swift */; };
-		044BE0B62603B145001E0663 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0B52603B145001E0663 /* ViewController.swift */; };
+		044BE0B62603B145001E0663 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0B52603B145001E0663 /* OnboardingViewController.swift */; };
 		044BE0BB2603B148001E0663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044BE0BA2603B148001E0663 /* Assets.xcassets */; };
 		044BE0BE2603B148001E0663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044BE0BC2603B148001E0663 /* LaunchScreen.storyboard */; };
 		044BE0C92603B148001E0663 /* FacilityManagementApp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0C82603B148001E0663 /* FacilityManagementApp_iOSTests.swift */; };
 		044BE0D42603B148001E0663 /* FacilityManagementApp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0D32603B148001E0663 /* FacilityManagementApp_iOSUITests.swift */; };
+		045EC7002606C34B00B966B2 /* GetStartedAuthenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC6FF2606C34B00B966B2 /* GetStartedAuthenViewController.swift */; };
+		045EC7052606C48900B966B2 /* AuthenConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC7042606C48900B966B2 /* AuthenConstants.swift */; };
+		045EC7462607984100B966B2 /* MSAL in Frameworks */ = {isa = PBXBuildFile; productRef = 045EC7452607984100B966B2 /* MSAL */; };
+		045EC75B2607C16300B966B2 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC75A2607C16300B966B2 /* AuthManager.swift */; };
+		045EC7602607D37100B966B2 /* AuthenticationSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045EC75F2607D37100B966B2 /* AuthenticationSettings.plist */; };
 		046785732606A26200320D8E /* OnboardingPageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046785722606A26200320D8E /* OnboardingPageViews.swift */; };
 		046785792606A3D400320D8E /* OnboardingPageConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046785782606A3D400320D8E /* OnboardingPageConstant.swift */; };
+		04C93393260A737900586742 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C93392260A737900586742 /* Errors.swift */; };
+		2820374F4AF23E5E7594F20E /* Pods_FacilityManagementApp_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74117163D0837EBD1D51A103 /* Pods_FacilityManagementApp_iOSTests.framework */; };
+		5537BA624E082B131DD5FE84 /* Pods_FacilityManagementApp_iOS_FacilityManagementApp_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746E14AEC71D90F676D82851 /* Pods_FacilityManagementApp_iOS_FacilityManagementApp_iOSUITests.framework */; };
+		D4C443D42EDAC24EE5E83A21 /* Pods_FacilityManagementApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE704C973C436D337F3B1B /* Pods_FacilityManagementApp_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +48,7 @@
 		044BE0AE2603B145001E0663 /* FacilityManagementApp iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FacilityManagementApp iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		044BE0B12603B145001E0663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		044BE0B32603B145001E0663 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		044BE0B52603B145001E0663 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		044BE0B52603B145001E0663 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		044BE0BA2603B148001E0663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044BE0BD2603B148001E0663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		044BE0BF2603B148001E0663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,8 +58,23 @@
 		044BE0CF2603B148001E0663 /* FacilityManagementApp iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FacilityManagementApp iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		044BE0D32603B148001E0663 /* FacilityManagementApp_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityManagementApp_iOSUITests.swift; sourceTree = "<group>"; };
 		044BE0D52603B148001E0663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045EC6FF2606C34B00B966B2 /* GetStartedAuthenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedAuthenViewController.swift; sourceTree = "<group>"; };
+		045EC7042606C48900B966B2 /* AuthenConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenConstants.swift; sourceTree = "<group>"; };
+		045EC75226079FDC00B966B2 /* FacilityManagementApp iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FacilityManagementApp iOS.entitlements"; sourceTree = "<group>"; };
+		045EC75A2607C16300B966B2 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		045EC75F2607D37100B966B2 /* AuthenticationSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AuthenticationSettings.plist; sourceTree = "<group>"; };
 		046785722606A26200320D8E /* OnboardingPageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViews.swift; sourceTree = "<group>"; };
 		046785782606A3D400320D8E /* OnboardingPageConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageConstant.swift; sourceTree = "<group>"; };
+		04C93392260A737900586742 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		311E9D574F36B90C165B47EB /* Pods-FacilityManagementApp iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacilityManagementApp iOS.release.xcconfig"; path = "Target Support Files/Pods-FacilityManagementApp iOS/Pods-FacilityManagementApp iOS.release.xcconfig"; sourceTree = "<group>"; };
+		3CCE8F0DDB9F376D3726DDA8 /* Pods-FacilityManagementApp iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacilityManagementApp iOSTests.release.xcconfig"; path = "Target Support Files/Pods-FacilityManagementApp iOSTests/Pods-FacilityManagementApp iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		54DE704C973C436D337F3B1B /* Pods_FacilityManagementApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacilityManagementApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		617445BAB853775A4124DE89 /* Pods-FacilityManagementApp iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacilityManagementApp iOS.debug.xcconfig"; path = "Target Support Files/Pods-FacilityManagementApp iOS/Pods-FacilityManagementApp iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		74117163D0837EBD1D51A103 /* Pods_FacilityManagementApp_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacilityManagementApp_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		746E14AEC71D90F676D82851 /* Pods_FacilityManagementApp_iOS_FacilityManagementApp_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacilityManagementApp_iOS_FacilityManagementApp_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D1B5DB0A5E1EE77541AFB2 /* Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests/Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C37F1F0C9EA017A6178EC595 /* Pods-FacilityManagementApp iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacilityManagementApp iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-FacilityManagementApp iOSTests/Pods-FacilityManagementApp iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBF8A84684A72E24C3B8814F /* Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests/Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4C443D42EDAC24EE5E83A21 /* Pods_FacilityManagementApp_iOS.framework in Frameworks */,
+				045EC7462607984100B966B2 /* MSAL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2820374F4AF23E5E7594F20E /* Pods_FacilityManagementApp_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5537BA624E082B131DD5FE84 /* Pods_FacilityManagementApp_iOS_FacilityManagementApp_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +113,8 @@
 				044BE0C72603B148001E0663 /* FacilityManagementApp iOSTests */,
 				044BE0D22603B148001E0663 /* FacilityManagementApp iOSUITests */,
 				044BE0AF2603B145001E0663 /* Products */,
+				9BE3FFB11FCC6F3BF3A543D5 /* Pods */,
+				DF0A0F782689B2E9D803336B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +131,8 @@
 		044BE0B02603B145001E0663 /* FacilityManagementApp iOS */ = {
 			isa = PBXGroup;
 			children = (
+				045EC75226079FDC00B966B2 /* FacilityManagementApp iOS.entitlements */,
+				045EC7592607C14500B966B2 /* Managers */,
 				046785772606A3AB00320D8E /* Constants */,
 				0467855A2605220B00320D8E /* Model */,
 				0467855C2605228C00320D8E /* View */,
@@ -131,6 +163,15 @@
 			path = "FacilityManagementApp iOSUITests";
 			sourceTree = "<group>";
 		};
+		045EC7592607C14500B966B2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				045EC75A2607C16300B966B2 /* AuthManager.swift */,
+				04C93392260A737900586742 /* Errors.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		0467855A2605220B00320D8E /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +197,8 @@
 		046785632605238F00320D8E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				044BE0B52603B145001E0663 /* ViewController.swift */,
+				044BE0B52603B145001E0663 /* OnboardingViewController.swift */,
+				045EC6FF2606C34B00B966B2 /* GetStartedAuthenViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -183,6 +225,7 @@
 				044BE0B32603B145001E0663 /* SceneDelegate.swift */,
 				044BE0BC2603B148001E0663 /* LaunchScreen.storyboard */,
 				044BE0BF2603B148001E0663 /* Info.plist */,
+				045EC75F2607D37100B966B2 /* AuthenticationSettings.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -191,8 +234,32 @@
 			isa = PBXGroup;
 			children = (
 				046785782606A3D400320D8E /* OnboardingPageConstant.swift */,
+				045EC7042606C48900B966B2 /* AuthenConstants.swift */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		9BE3FFB11FCC6F3BF3A543D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				617445BAB853775A4124DE89 /* Pods-FacilityManagementApp iOS.debug.xcconfig */,
+				311E9D574F36B90C165B47EB /* Pods-FacilityManagementApp iOS.release.xcconfig */,
+				CBF8A84684A72E24C3B8814F /* Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests.debug.xcconfig */,
+				B4D1B5DB0A5E1EE77541AFB2 /* Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests.release.xcconfig */,
+				C37F1F0C9EA017A6178EC595 /* Pods-FacilityManagementApp iOSTests.debug.xcconfig */,
+				3CCE8F0DDB9F376D3726DDA8 /* Pods-FacilityManagementApp iOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF0A0F782689B2E9D803336B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54DE704C973C436D337F3B1B /* Pods_FacilityManagementApp_iOS.framework */,
+				746E14AEC71D90F676D82851 /* Pods_FacilityManagementApp_iOS_FacilityManagementApp_iOSUITests.framework */,
+				74117163D0837EBD1D51A103 /* Pods_FacilityManagementApp_iOSTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,16 +269,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044BE0D82603B148001E0663 /* Build configuration list for PBXNativeTarget "FacilityManagementApp iOS" */;
 			buildPhases = (
+				C258913CB3C29F39567314D8 /* [CP] Check Pods Manifest.lock */,
 				044BE0AA2603B145001E0663 /* Sources */,
 				044BE0AB2603B145001E0663 /* Frameworks */,
 				044BE0AC2603B145001E0663 /* Resources */,
 				044BE0E42603C69B001E0663 /* ShellScript */,
+				31B67D410A360B2837610A17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "FacilityManagementApp iOS";
+			packageProductDependencies = (
+				045EC7452607984100B966B2 /* MSAL */,
+			);
 			productName = "FacilityManagementApp iOS";
 			productReference = 044BE0AE2603B145001E0663 /* FacilityManagementApp iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044BE0DB2603B148001E0663 /* Build configuration list for PBXNativeTarget "FacilityManagementApp iOSTests" */;
 			buildPhases = (
+				47468DCFEA92AFE4D2F7BFEA /* [CP] Check Pods Manifest.lock */,
 				044BE0C02603B148001E0663 /* Sources */,
 				044BE0C12603B148001E0663 /* Frameworks */,
 				044BE0C22603B148001E0663 /* Resources */,
@@ -238,9 +311,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044BE0DE2603B148001E0663 /* Build configuration list for PBXNativeTarget "FacilityManagementApp iOSUITests" */;
 			buildPhases = (
+				1A1A4FFCD4962CDC5F33780E /* [CP] Check Pods Manifest.lock */,
 				044BE0CB2603B148001E0663 /* Sources */,
 				044BE0CC2603B148001E0663 /* Frameworks */,
 				044BE0CD2603B148001E0663 /* Resources */,
+				BE636C411EF188A2AF05F62D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,6 +358,9 @@
 				Base,
 			);
 			mainGroup = 044BE0A52603B145001E0663;
+			packageReferences = (
+				045EC7442607984100B966B2 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */,
+			);
 			productRefGroup = 044BE0AF2603B145001E0663 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -300,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044BE0BE2603B148001E0663 /* LaunchScreen.storyboard in Resources */,
+				045EC7602607D37100B966B2 /* AuthenticationSettings.plist in Resources */,
 				044BE0BB2603B148001E0663 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +417,106 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		1A1A4FFCD4962CDC5F33780E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31B67D410A360B2837610A17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FacilityManagementApp iOS/Pods-FacilityManagementApp iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FacilityManagementApp iOS/Pods-FacilityManagementApp iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FacilityManagementApp iOS/Pods-FacilityManagementApp iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47468DCFEA92AFE4D2F7BFEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FacilityManagementApp iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE636C411EF188A2AF05F62D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests/Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests/Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests/Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C258913CB3C29F39567314D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FacilityManagementApp iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -345,10 +524,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044BE0B62603B145001E0663 /* ViewController.swift in Sources */,
+				045EC7052606C48900B966B2 /* AuthenConstants.swift in Sources */,
+				045EC75B2607C16300B966B2 /* AuthManager.swift in Sources */,
+				044BE0B62603B145001E0663 /* OnboardingViewController.swift in Sources */,
+				045EC7002606C34B00B966B2 /* GetStartedAuthenViewController.swift in Sources */,
 				044BE0B22603B145001E0663 /* AppDelegate.swift in Sources */,
 				046785732606A26200320D8E /* OnboardingPageViews.swift in Sources */,
 				044BE0B42603B145001E0663 /* SceneDelegate.swift in Sources */,
+				04C93393260A737900586742 /* Errors.swift in Sources */,
 				046785792606A3D400320D8E /* OnboardingPageConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,11 +697,13 @@
 		};
 		044BE0D92603B148001E0663 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 617445BAB853775A4124DE89 /* Pods-FacilityManagementApp iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FacilityManagementApp iOS/FacilityManagementApp iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6ZPB2R3KP8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "FacilityManagementApp iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -533,11 +718,13 @@
 		};
 		044BE0DA2603B148001E0663 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 311E9D574F36B90C165B47EB /* Pods-FacilityManagementApp iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "FacilityManagementApp iOS/FacilityManagementApp iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6ZPB2R3KP8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "FacilityManagementApp iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -552,6 +739,7 @@
 		};
 		044BE0DC2603B148001E0663 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C37F1F0C9EA017A6178EC595 /* Pods-FacilityManagementApp iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -574,6 +762,7 @@
 		};
 		044BE0DD2603B148001E0663 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CCE8F0DDB9F376D3726DDA8 /* Pods-FacilityManagementApp iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -596,6 +785,7 @@
 		};
 		044BE0DF2603B148001E0663 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBF8A84684A72E24C3B8814F /* Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -616,6 +806,7 @@
 		};
 		044BE0E02603B149001E0663 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D1B5DB0A5E1EE77541AFB2 /* Pods-FacilityManagementApp iOS-FacilityManagementApp iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -674,6 +865,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		045EC7442607984100B966B2 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AzureAD/microsoft-authentication-library-for-objc";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		045EC7452607984100B966B2 /* MSAL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 045EC7442607984100B966B2 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */;
+			productName = MSAL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 044BE0A62603B145001E0663 /* Project object */;
 }
