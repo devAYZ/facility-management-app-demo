@@ -7,7 +7,6 @@
 
 import Foundation
 struct AuthenConstants {
-    static let clientSecret = "xuNK_90u9Xj.kkchZKLzS6xvW1yV.C2s.0"
     static let authorityError = "There was an error getting the authority URL...Try again"
     static let initError = "There was an error creating MSAL Public client"
     static let userAccountError = "There was an error getting the user account"

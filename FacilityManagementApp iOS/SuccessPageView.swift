@@ -10,9 +10,9 @@ import UIKit
 class SuccessPageView: UIView {
     
     func setupSuccessAlert(viewController: UIViewController) {
-        let title = "Success"
-        let msg = "You have been successfully authorized, and login in as {name}"
-        let btn = "Continue to app"
+        let title = SuccessAlertConstant.title
+        let msg = SuccessAlertConstant.msg
+        let btn = SuccessAlertConstant.btn
         let successAlert = UIAlertController(title: title,
                                           message: msg,
                                           preferredStyle: .alert)

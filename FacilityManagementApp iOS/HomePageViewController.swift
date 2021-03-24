@@ -38,6 +38,7 @@ class HomePageViewController: UIViewController {
         DispatchQueue.main.async {
             AuthManager.shared.signOut()
         }
+        self.dismiss(animated: true, completion: nil)
         
     }
     

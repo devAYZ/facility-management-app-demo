@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0418ADEF260B37A900162FBA /* SuccessPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418ADEE260B37A900162FBA /* SuccessPageView.swift */; };
 		0418ADF4260B37F100162FBA /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418ADF3260B37F100162FBA /* HomePageViewController.swift */; };
+		0418ADF9260B3D9800162FBA /* ErrorPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418ADF8260B3D9800162FBA /* ErrorPageViewController.swift */; };
+		0418ADFE260B3DC500162FBA /* ErrorPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418ADFD260B3DC500162FBA /* ErrorPageView.swift */; };
+		0418AE04260B42AC00162FBA /* ErrorPageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418AE03260B42AC00162FBA /* ErrorPageConstants.swift */; };
+		0418AE09260B460A00162FBA /* SuccessPageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418AE08260B460900162FBA /* SuccessPageConstants.swift */; };
+		0418AE0E260B49ED00162FBA /* OnboardingVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418AE0D260B49EC00162FBA /* OnboardingVCExtension.swift */; };
 		044BE0B22603B145001E0663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0B12603B145001E0663 /* AppDelegate.swift */; };
 		044BE0B42603B145001E0663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0B32603B145001E0663 /* SceneDelegate.swift */; };
 		044BE0B62603B145001E0663 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0B52603B145001E0663 /* OnboardingViewController.swift */; };
@@ -49,6 +54,11 @@
 /* Begin PBXFileReference section */
 		0418ADEE260B37A900162FBA /* SuccessPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPageView.swift; sourceTree = "<group>"; };
 		0418ADF3260B37F100162FBA /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		0418ADF8260B3D9800162FBA /* ErrorPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPageViewController.swift; sourceTree = "<group>"; };
+		0418ADFD260B3DC500162FBA /* ErrorPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPageView.swift; sourceTree = "<group>"; };
+		0418AE03260B42AC00162FBA /* ErrorPageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPageConstants.swift; sourceTree = "<group>"; };
+		0418AE08260B460900162FBA /* SuccessPageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPageConstants.swift; sourceTree = "<group>"; };
+		0418AE0D260B49EC00162FBA /* OnboardingVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVCExtension.swift; sourceTree = "<group>"; };
 		044BE0AE2603B145001E0663 /* FacilityManagementApp iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FacilityManagementApp iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		044BE0B12603B145001E0663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		044BE0B32603B145001E0663 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +205,7 @@
 			children = (
 				046785722606A26200320D8E /* OnboardingPageViews.swift */,
 				0418ADEE260B37A900162FBA /* SuccessPageView.swift */,
+				0418ADFD260B3DC500162FBA /* ErrorPageView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -202,6 +213,7 @@
 		046785632605238F00320D8E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0418ADF8260B3D9800162FBA /* ErrorPageViewController.swift */,
 				044BE0B52603B145001E0663 /* OnboardingViewController.swift */,
 				045EC6FF2606C34B00B966B2 /* SuccessPageViewController.swift */,
 				0418ADF3260B37F100162FBA /* HomePageViewController.swift */,
@@ -212,6 +224,7 @@
 		04678564260523BD00320D8E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0418AE0D260B49EC00162FBA /* OnboardingVCExtension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -241,6 +254,8 @@
 			children = (
 				046785782606A3D400320D8E /* OnboardingPageConstant.swift */,
 				045EC7042606C48900B966B2 /* AuthenConstants.swift */,
+				0418AE03260B42AC00162FBA /* ErrorPageConstants.swift */,
+				0418AE08260B460900162FBA /* SuccessPageConstants.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -530,17 +545,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0418ADFE260B3DC500162FBA /* ErrorPageView.swift in Sources */,
+				0418AE04260B42AC00162FBA /* ErrorPageConstants.swift in Sources */,
 				045EC7052606C48900B966B2 /* AuthenConstants.swift in Sources */,
 				045EC75B2607C16300B966B2 /* AuthManager.swift in Sources */,
 				044BE0B62603B145001E0663 /* OnboardingViewController.swift in Sources */,
 				0418ADEF260B37A900162FBA /* SuccessPageView.swift in Sources */,
 				045EC7002606C34B00B966B2 /* SuccessPageViewController.swift in Sources */,
 				044BE0B22603B145001E0663 /* AppDelegate.swift in Sources */,
+				0418ADF9260B3D9800162FBA /* ErrorPageViewController.swift in Sources */,
+				0418AE09260B460A00162FBA /* SuccessPageConstants.swift in Sources */,
 				046785732606A26200320D8E /* OnboardingPageViews.swift in Sources */,
 				0418ADF4260B37F100162FBA /* HomePageViewController.swift in Sources */,
 				044BE0B42603B145001E0663 /* SceneDelegate.swift in Sources */,
 				04C93393260A737900586742 /* Errors.swift in Sources */,
 				046785792606A3D400320D8E /* OnboardingPageConstant.swift in Sources */,
+				0418AE0E260B49ED00162FBA /* OnboardingVCExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

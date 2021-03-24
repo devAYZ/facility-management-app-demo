@@ -13,7 +13,7 @@ class OnboardingPageViews: UIView {
         let getStartedBtn = UIButton(type: .system)
         getStartedBtn.backgroundColor = #colorLiteral(red: 0.08113656193, green: 0.6480865479, blue: 0.3539350927, alpha: 1)
         getStartedBtn.layer.cornerRadius = 8.0
-        getStartedBtn.setTitle(OnboardingConstant.getStartedBtn, for: .normal)
+        getStartedBtn.setTitle(OnboardingViewConstant.getStartedBtn, for: .normal)
         getStartedBtn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         getStartedBtn.setTitleColor(.white, for: .normal)
         return getStartedBtn
@@ -21,7 +21,7 @@ class OnboardingPageViews: UIView {
     
     let infoLabel: UILabel = {
         let infoLabel = UILabel()
-        infoLabel.text = OnboardingConstant.infoLabel
+        infoLabel.text = OnboardingViewConstant.infoLabel
         infoLabel.numberOfLines = 0
         infoLabel.textAlignment = .center
         infoLabel.textColor = .black
@@ -38,7 +38,7 @@ class OnboardingPageViews: UIView {
     
     let welcomeLabel: UILabel = {
         let welcomeLabel = UILabel()
-        welcomeLabel.text = OnboardingConstant.welcomeLabel
+        welcomeLabel.text = OnboardingViewConstant.welcomeLabel
         welcomeLabel.numberOfLines = 0
         welcomeLabel.font = UIFont.boldSystemFont(ofSize: 50)
         welcomeLabel.textAlignment = .center
