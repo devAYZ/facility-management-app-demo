@@ -13,7 +13,6 @@ class OnboardingPageViews: UIView {
         let getStartedBtn = UIButton(type: .system)
         getStartedBtn.backgroundColor = #colorLiteral(red: 0.08113656193, green: 0.6480865479, blue: 0.3539350927, alpha: 1)
         getStartedBtn.layer.cornerRadius = 8.0
-        getStartedBtn.translatesAutoresizingMaskIntoConstraints = false
         getStartedBtn.setTitle(OnboardingConstant.getStartedBtn, for: .normal)
         getStartedBtn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         getStartedBtn.setTitleColor(.white, for: .normal)
@@ -22,10 +21,10 @@ class OnboardingPageViews: UIView {
     
     let infoLabel: UILabel = {
         let infoLabel = UILabel()
-        infoLabel.translatesAutoresizingMaskIntoConstraints = false
         infoLabel.text = OnboardingConstant.infoLabel
         infoLabel.numberOfLines = 0
         infoLabel.textAlignment = .center
+        infoLabel.textColor = .black
         return infoLabel
     }()
     
@@ -34,17 +33,16 @@ class OnboardingPageViews: UIView {
         onboardImage.clipsToBounds = true
         onboardImage.image = #imageLiteral(resourceName: "onboard-img")
         onboardImage.contentMode = .scaleAspectFit
-        onboardImage.translatesAutoresizingMaskIntoConstraints = false
         return onboardImage
     }()
     
     let welcomeLabel: UILabel = {
         let welcomeLabel = UILabel()
-        welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
         welcomeLabel.text = OnboardingConstant.welcomeLabel
         welcomeLabel.numberOfLines = 0
         welcomeLabel.font = UIFont.boldSystemFont(ofSize: 50)
         welcomeLabel.textAlignment = .center
+        welcomeLabel.textColor = .black
         welcomeLabel.adjustsFontSizeToFitWidth = true
         return welcomeLabel
     }()

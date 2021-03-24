@@ -19,7 +19,7 @@ class OnboardingViewController: UIViewController {
                 guard token != nil, error == nil else {
                     return
                 }
-                self.present(GetStartedAuthenViewController(), animated: true, completion: nil)
+                self.present(SuccessPageViewController(), animated: true, completion: nil)
             }
         }
         
@@ -39,8 +39,10 @@ class OnboardingViewController: UIViewController {
         
         [onboardingPageViews.getStartedBtn, onboardingPageViews.infoLabel,
          onboardingPageViews.onboardImage, onboardingPageViews.welcomeLabel].forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview($0)
         }
+        
         onboardingPageViews.getStartedBtn.addTarget(self, action: #selector(didTapGetStarted), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
@@ -77,7 +79,7 @@ class OnboardingViewController: UIViewController {
                     self.present(alert, animated: true, completion: nil)
                     return }
                 print("The sign in token: \(token)")
-                self.present(GetStartedAuthenViewController(), animated: true, completion: nil)
+                self.present(SuccessPageViewController(), animated: true, completion: nil)
             }
         }
     }

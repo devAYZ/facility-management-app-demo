@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0418ADEF260B37A900162FBA /* SuccessPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418ADEE260B37A900162FBA /* SuccessPageView.swift */; };
+		0418ADF4260B37F100162FBA /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418ADF3260B37F100162FBA /* HomePageViewController.swift */; };
 		044BE0B22603B145001E0663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0B12603B145001E0663 /* AppDelegate.swift */; };
 		044BE0B42603B145001E0663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0B32603B145001E0663 /* SceneDelegate.swift */; };
 		044BE0B62603B145001E0663 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0B52603B145001E0663 /* OnboardingViewController.swift */; };
@@ -14,7 +16,7 @@
 		044BE0BE2603B148001E0663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044BE0BC2603B148001E0663 /* LaunchScreen.storyboard */; };
 		044BE0C92603B148001E0663 /* FacilityManagementApp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0C82603B148001E0663 /* FacilityManagementApp_iOSTests.swift */; };
 		044BE0D42603B148001E0663 /* FacilityManagementApp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044BE0D32603B148001E0663 /* FacilityManagementApp_iOSUITests.swift */; };
-		045EC7002606C34B00B966B2 /* GetStartedAuthenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC6FF2606C34B00B966B2 /* GetStartedAuthenViewController.swift */; };
+		045EC7002606C34B00B966B2 /* SuccessPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC6FF2606C34B00B966B2 /* SuccessPageViewController.swift */; };
 		045EC7052606C48900B966B2 /* AuthenConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC7042606C48900B966B2 /* AuthenConstants.swift */; };
 		045EC7462607984100B966B2 /* MSAL in Frameworks */ = {isa = PBXBuildFile; productRef = 045EC7452607984100B966B2 /* MSAL */; };
 		045EC75B2607C16300B966B2 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EC75A2607C16300B966B2 /* AuthManager.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0418ADEE260B37A900162FBA /* SuccessPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPageView.swift; sourceTree = "<group>"; };
+		0418ADF3260B37F100162FBA /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		044BE0AE2603B145001E0663 /* FacilityManagementApp iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FacilityManagementApp iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		044BE0B12603B145001E0663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		044BE0B32603B145001E0663 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +62,7 @@
 		044BE0CF2603B148001E0663 /* FacilityManagementApp iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FacilityManagementApp iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		044BE0D32603B148001E0663 /* FacilityManagementApp_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityManagementApp_iOSUITests.swift; sourceTree = "<group>"; };
 		044BE0D52603B148001E0663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		045EC6FF2606C34B00B966B2 /* GetStartedAuthenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedAuthenViewController.swift; sourceTree = "<group>"; };
+		045EC6FF2606C34B00B966B2 /* SuccessPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPageViewController.swift; sourceTree = "<group>"; };
 		045EC7042606C48900B966B2 /* AuthenConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenConstants.swift; sourceTree = "<group>"; };
 		045EC75226079FDC00B966B2 /* FacilityManagementApp iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "FacilityManagementApp iOS.entitlements"; sourceTree = "<group>"; };
 		045EC75A2607C16300B966B2 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				046785722606A26200320D8E /* OnboardingPageViews.swift */,
+				0418ADEE260B37A900162FBA /* SuccessPageView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -198,7 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				044BE0B52603B145001E0663 /* OnboardingViewController.swift */,
-				045EC6FF2606C34B00B966B2 /* GetStartedAuthenViewController.swift */,
+				045EC6FF2606C34B00B966B2 /* SuccessPageViewController.swift */,
+				0418ADF3260B37F100162FBA /* HomePageViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -527,9 +533,11 @@
 				045EC7052606C48900B966B2 /* AuthenConstants.swift in Sources */,
 				045EC75B2607C16300B966B2 /* AuthManager.swift in Sources */,
 				044BE0B62603B145001E0663 /* OnboardingViewController.swift in Sources */,
-				045EC7002606C34B00B966B2 /* GetStartedAuthenViewController.swift in Sources */,
+				0418ADEF260B37A900162FBA /* SuccessPageView.swift in Sources */,
+				045EC7002606C34B00B966B2 /* SuccessPageViewController.swift in Sources */,
 				044BE0B22603B145001E0663 /* AppDelegate.swift in Sources */,
 				046785732606A26200320D8E /* OnboardingPageViews.swift in Sources */,
+				0418ADF4260B37F100162FBA /* HomePageViewController.swift in Sources */,
 				044BE0B42603B145001E0663 /* SceneDelegate.swift in Sources */,
 				04C93393260A737900586742 /* Errors.swift in Sources */,
 				046785792606A3D400320D8E /* OnboardingPageConstant.swift in Sources */,
