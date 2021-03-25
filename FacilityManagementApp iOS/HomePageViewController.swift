@@ -24,7 +24,7 @@ class HomePageViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .systemGray6
+        appearance.backgroundColor = #colorLiteral(red: 0.8888407235, green: 0.8888407235, blue: 0.8888407235, alpha: 1)
         appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
         
@@ -35,10 +35,11 @@ class HomePageViewController: UIViewController {
     }
     
     @objc func didTap() {
-        DispatchQueue.main.async {
-            AuthManager.shared.signOut()
-        }
-        self.dismiss(animated: true, completion: nil)
+        AuthManager.shared.signOut()
+        
+        let onboard = OnboardingViewController()
+        onboard.modalPresentationStyle = .fullScreen
+        self.present(onboard, animated: true, completion: nil)
         
     }
     

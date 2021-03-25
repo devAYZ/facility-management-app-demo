@@ -16,7 +16,7 @@ class SuccessPageViewController: UIViewController, WKNavigationDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray4
+        view.backgroundColor = #colorLiteral(red: 0.8888407235, green: 0.8888407235, blue: 0.8888407235, alpha: 1)
     }
     
     override func viewDidAppear(_ animated: Bool) {

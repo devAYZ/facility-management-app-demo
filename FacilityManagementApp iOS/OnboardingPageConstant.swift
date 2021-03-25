@@ -10,5 +10,5 @@ import Foundation
 struct OnboardingViewConstant {
     static let getStartedBtn = "GET STARTED"
     static let infoLabel = "Manage all your complains in one place"
-    static let welcomeLabel = "FACILITY \n MANAGEMENT \n APP"
+    static let welcomeLabel = "FACILITY MANAGEMENT APP"
 }

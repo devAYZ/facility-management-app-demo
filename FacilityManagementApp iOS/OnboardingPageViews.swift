@@ -40,7 +40,7 @@ class OnboardingPageViews: UIView {
         let welcomeLabel = UILabel()
         welcomeLabel.text = OnboardingViewConstant.welcomeLabel
         welcomeLabel.numberOfLines = 0
-        welcomeLabel.font = UIFont.boldSystemFont(ofSize: 50)
+        welcomeLabel.font = UIFont.boldSystemFont(ofSize: 48)
         welcomeLabel.textAlignment = .center
         welcomeLabel.textColor = .black
         welcomeLabel.adjustsFontSizeToFitWidth = true
