@@ -35,8 +35,6 @@ class HomePageViewController: UIViewController {
     }
     
     @objc func didTap() {
-        AuthManager.shared.signOut()
-        
         let onboard = OnboardingViewController()
         onboard.modalPresentationStyle = .fullScreen
         self.present(onboard, animated: true, completion: nil)

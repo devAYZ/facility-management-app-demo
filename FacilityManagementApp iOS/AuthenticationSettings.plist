@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>RedirectURI</key>
-	<string>msauth.com.waheedcodes.FacilityManagementApp-iOS://auth</string>
-	<key>AppAuthority</key>
-	<string>https://login.microsoftonline.com/364cc942-1cec-4791-b264-cde4a0a816f6</string>
-	<key>AppId</key>
-	<string>1b7167aa-e629-42b4-9ab9-3285b6738c0b</string>
-	<key>GraphScopes</key>
-	<array>
-		<string>User.Read</string>
-		<string>Calendars.Read</string>
-		<string>MailboxSettings.ReadWrite</string>
-	</array>
-</dict>
+<dict/>
 </plist>

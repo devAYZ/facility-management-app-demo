@@ -14,15 +14,6 @@ class OnboardingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        AuthManager.shared.getTokenSilently { (token: String?, error: Error?) in
-            DispatchQueue.main.async {
-                guard token != nil, error == nil else {
-                    return
-                }
-                self.present(SuccessPageViewController(), animated: true, completion: nil)
-            }
-        }
-        
         setupBoardingPageViews()
     }
     

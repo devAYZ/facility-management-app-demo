@@ -44,18 +44,7 @@ extension OnboardingViewController {
     }
     
     @objc func didTapGetStarted() {
-       
-        AuthManager.shared.getTokenInteractively(parentView: self) { (token: String?, error: Error?) in
-            DispatchQueue.main.async {
-                guard let token = token, error == nil else {
-
-                    self.present(ErrorPageViewController(), animated: true, completion: nil)
-                    return
-                }
-                
-                print("The sign in token: \(token)")
-                self.present(SuccessPageViewController(), animated: true, completion: nil)
-            }
-        }
+        self.present(SuccessPageViewController(), animated: true, completion: nil)
+        
     }
 }
